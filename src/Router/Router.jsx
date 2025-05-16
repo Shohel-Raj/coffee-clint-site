@@ -5,11 +5,13 @@ import User from "../Component/user";
 import AddCofeeSec from "../Component/AddcoffeeSection/AddCofeeSec";
 import ViewDetails from "../Component/ViewDetails/ViewDetails";
 import UpdateDetails from "../Component/UpdateCoffeeDetails/UpdateDetails";
+import ErrorPage from "../Component/ErrorPage";
 
 export const router = createBrowserRouter([
     {
       path: "/",
       Component:App,
+      errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
           index:true,
