@@ -1,10 +1,9 @@
 import React from 'react';
-import { FaArrowLeft } from "react-icons/fa6";
 import { Link } from 'react-router';
-import CoffeeAddForm from './coffeeAddForm';
+import UpdateForm from './UpdateForm';
+import { FaArrowLeft } from "react-icons/fa6";
 
-
-const AddCofeeSec = () => {
+const UpdateDetails = () => {
     return (
         <>
             <section className=" h-screen   bg-[url('../11.png')] mb-9 ">
@@ -15,7 +14,7 @@ const AddCofeeSec = () => {
 
                 <div className=' w-11/12  mx-auto py-3 px-1.5 mt-2.5 md:mt-5 rounded-2xl md:rounded-3xl md:py-16 md:px-28 bg-[#F4F3F0]'>
                 <div className='text-center'>
-                    <h1 className='font-bold mb-2.5'>Add New Coffee</h1>
+                    <h1 className='font-bold mb-2.5'>Update Existing Coffee Details</h1>
                     <p className='w-10/12 mx-auto'>It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
                 </div>
                     
@@ -24,7 +23,7 @@ const AddCofeeSec = () => {
 
 
                     <div>
-                        <CoffeeAddForm></CoffeeAddForm>
+                        <UpdateForm></UpdateForm>
                     </div>
                 </div>
 
@@ -36,4 +35,4 @@ const AddCofeeSec = () => {
     );
 };
 
-export default AddCofeeSec;
+export default UpdateDetails;

@@ -3,6 +3,8 @@ import App from "../App";
 import HomeSection from "../HomeSection";
 import User from "../Component/user";
 import AddCofeeSec from "../Component/AddcoffeeSection/AddCofeeSec";
+import ViewDetails from "../Component/ViewDetails/ViewDetails";
+import UpdateDetails from "../Component/UpdateCoffeeDetails/UpdateDetails";
 
 export const router = createBrowserRouter([
     {
@@ -17,6 +19,14 @@ export const router = createBrowserRouter([
         {
           path:'/addCoffee',
           Component:AddCofeeSec
+        },
+        {
+          path:'/viewdetails/:id',
+          Component:ViewDetails
+        },
+        {
+          path:'/updateDetails/:id',
+          Component:UpdateDetails
         }
       ]
     },

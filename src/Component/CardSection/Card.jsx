@@ -9,7 +9,7 @@ const Card = () => {
 
     return (
         <div className='bg-[#ECEAE3]'>
-            <div className='w-11/12 mx-auto grid grid-cols-4 gap-4'>
+            <div className='w-11/12 mx-auto grid grid-cols-2 md:grid-cols-4 gap-4'>
             {
                 data.map(card=><SingleCard key={card.id} card={card}></SingleCard>)
             }

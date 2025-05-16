@@ -1,15 +1,9 @@
 import React from 'react';
 
-const CoffeeAddForm = () => {
-
-    const handleAddCoffee = e => { 
-        e.preventDefault();
-        // const form=e.target;
-
-    }
+const UpdateForm = () => {
     return (
         <>
-            <form onSubmit={handleAddCoffee} className=" grid grid-cols-1 md:grid-cols-2 gap-2.5 md:gap-5  py-10">
+          <form  className=" grid grid-cols-1 md:grid-cols-2 gap-2.5 md:gap-5  py-10">
                 <fieldset className="fieldset py-0">
                     <legend className="fieldset-legend">Name </legend>
                     <input type="text" className="input w-full" name='name' placeholder="Enter coffee name here" />
@@ -45,9 +39,9 @@ const CoffeeAddForm = () => {
                     <input type="url" className="input w-full" name='photo' placeholder="Enter Photo URL here" />
                 </fieldset>
                 <button className="btn  md:col-span-2 w-full bg-[#D2B48C]">Add Coffee</button>
-            </form>
+            </form>   
         </>
     );
 };
 
-export default CoffeeAddForm;
+export default UpdateForm;

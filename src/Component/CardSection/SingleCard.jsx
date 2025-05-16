@@ -6,7 +6,7 @@ const SingleCard = ({card}) => {
 
     return (
         <>
-                <div className='p-6 space-y-2'>
+                <div className='p-3 md:p-6 space-y-2'>
                     <div className='w-[50px]'>
                         <img className='w-full' src={img} alt="icon" />
                     </div>
