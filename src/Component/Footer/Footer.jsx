@@ -10,7 +10,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 const Footer = () => {
     return (
         <>
-            <div className="bg-[url('../13.jpg')]">
+            <div className="bg-[url('../13.jpg')] mt-3">
 
 
                 <div className='w-11/12 mx-auto '>

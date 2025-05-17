@@ -4,7 +4,24 @@ const CoffeeAddForm = () => {
 
     const handleAddCoffee = e => { 
         e.preventDefault();
-        // const form=e.target;
+        const form=e.target;
+
+        const formData= new FormData(form);
+        const Coffeedata=Object.fromEntries(formData.entries())
+        // console.log(Coffeedata);
+
+    
+        fetch('http://localhost:3000/coffee', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(Coffeedata)
+
+        }).then(res => res.json()).then(data => {
+            console.log('data after creating user into db', data);
+        })
+        form.reset();
 
     }
     return (

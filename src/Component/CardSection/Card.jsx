@@ -1,10 +1,13 @@
-import React from 'react';
-import { useLoaderData } from 'react-router';
+import React, { use } from 'react';
+// import { useLoaderData } from 'react-router';
 import SingleCard from './SingleCard';
+
+
+const dataPromise=fetch('/Carddata.json').then(res=>res.json())
 
 const Card = () => {
 
-    const data=useLoaderData()
+    const data=use(dataPromise)
 
 
     return (

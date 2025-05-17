@@ -16,7 +16,8 @@ export const router = createBrowserRouter([
         {
           index:true,
           Component:HomeSection,
-          loader:()=>fetch('/Carddata.json')
+          loader:()=>fetch('http://localhost:3000/coffee'),
+          
         },
         {
           path:'/addCoffee',
@@ -24,7 +25,8 @@ export const router = createBrowserRouter([
         },
         {
           path:'/viewdetails/:id',
-          Component:ViewDetails
+          Component:ViewDetails,
+          loader:({params})=>fetch(`http://localhost:3000/coffee/${params.id}`)
         },
         {
           path:'/updateDetails/:id',
