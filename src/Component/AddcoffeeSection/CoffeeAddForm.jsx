@@ -11,7 +11,7 @@ const CoffeeAddForm = () => {
         // console.log(Coffeedata);
 
     
-        fetch('http://localhost:3000/coffee', {
+        fetch('https://coffee-server-green.vercel.app/coffee', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

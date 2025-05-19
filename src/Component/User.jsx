@@ -11,7 +11,7 @@ const User = () => {
         const email = e.target.email.value;
         const newUser = { name, email };
 
-        fetch('http://localhost:3000/users', {
+        fetch('https://coffee-server-murex.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

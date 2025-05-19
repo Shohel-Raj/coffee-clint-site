@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
         {
           index:true,
           Component:HomeSection,
-          loader:()=>fetch('http://localhost:3000/coffee'),
+          loader:()=>fetch('https://coffee-server-green.vercel.app/coffee'),
           
         },
         {
@@ -26,12 +26,12 @@ export const router = createBrowserRouter([
         {
           path:'/viewdetails/:id',
           Component:ViewDetails,
-          loader:({params})=>fetch(`http://localhost:3000/coffee/${params.id}`)
+          loader:({params})=>fetch(`https://coffee-server-green.vercel.app/coffee/${params.id}`)
         },
         {
           path:'/updateDetails/:id',
           Component:UpdateDetails,
-          loader:({params})=>fetch(`http://localhost:3000/coffee/${params.id}`)
+          loader:({params})=>fetch(`https://coffee-server-green.vercel.app/coffee/${params.id}`)
         }
       ]
     },
